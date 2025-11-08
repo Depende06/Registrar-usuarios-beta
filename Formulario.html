@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos del Usuario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="formulario">
+  <div class="contenedor">
+    <form>
+      <div class="encabezado">
+        <h1>Datos del usuario</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/022/123/337/non_2x/user-icon-profile-icon-account-icon-login-sign-line-vector.jpg" alt="Icono de usuario">
+      </div>
+
+      <label for="nombres">Nombre:</label>
+      <input type="text" name="nombre" placeholder="Ingrese sus nombres">
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos" placeholder="Ingrese sus apellidos">
+
+      <label for="correo">Correo:</label>
+      <input type="email" name="correo" placeholder="Ingrese su correo">
+
+      <label for="ciudad">Ciudad de origen:</label>
+      <select name="ciudad">
+        <option value="Portoviejo">Portoviejo</option>
+        <option value="Manta">Manta</option>
+        <option value="Calceta">Calceta</option>
+        <option value="Santa Ana">Santa Ana</option>
+        <option value="Paján">Paján</option>
+      </select>
+
+      <label for="color_favorito">Color favorito:</label>
+      <input type="color" name="color_fav">
+
+      <label for="frase">Frase célebre favorita:</label>
+      <textarea name="textarea_frase" rows="5" placeholder="Escribe aquí tu frase favorita..."></textarea>
+
+      <div class="boton_registrar">
+        <input type="submit" name="insertar" value="Registrar">
+        <input type="reset" name="borrar" value="Borrar formulario">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
+
