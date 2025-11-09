@@ -10,14 +10,43 @@
 </head>
 
 <body class="index">
+  <!-- 🎵 Música de fondo -->
+  <audio id="musica" loop>
+    <source src="anuel.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <!-- 🔘 Botón para reproducir/pausar -->
+  <button id="boton-musica" class="boton-musica">🎵 Reproducir música</button>
+
   <div class="rectangulo">
     <nav class="botones">
       <button onclick="location.href='Formulario.html'">Iniciar formulario</button>
       <button onclick="location.href='Info.html'">Ver información del estudiante</button>
     </nav>
+
     <h1>Bienvenido, soy el Estudiante: Macias Cedeño Lenin Xavier</h1>
     <p>Haga click en iniciar formulario</p>
   </div>
+
+  <!-- 💻 Script para el control de música -->
+  <script>
+    const musica = document.getElementById('musica');
+    const boton = document.getElementById('boton-musica');
+    let reproduciendo = false;
+
+    boton.addEventListener('click', () => {
+      if (!reproduciendo) {
+        musica.play();
+        boton.textContent = '⏸️ Pausar música';
+        reproduciendo = true;
+      } else {
+        musica.pause();
+        boton.textContent = '🎵 Reproducir música';
+        reproduciendo = false;
+      }
+    });
+  </script>
 </body>
 
 </html>
