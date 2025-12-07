@@ -1,35 +1,54 @@
-<!-- Estudiante: Macias Cedeño Lenin Xavier -->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Inicio</title>
+  <title>Zona Gamer - Inicio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="index">
-  <!-- 🎵 Música de fondo -->
+
   <audio id="musica" loop>
     <source src="anuel.mp3" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
   </audio>
 
-  <!-- 🔘 Botón para reproducir/pausar -->
   <button id="boton-musica" class="boton-musica">🎵 Reproducir música</button>
 
   <div class="rectangulo">
-    <nav class="botones">
-      <button onclick="location.href='Formulario.html'">Iniciar formulario</button>
-      <button onclick="location.href='Info.html'">Ver información del estudiante</button>
-    </nav>
+    <h1>🎮 Bienvenido a DependeGaming</h1>
+    <p>Descubre juegos de PC, emuladores, ROMs y contenido gamer exclusivo.</p>
 
-    <h1>Bienvenido, soy el Estudiante: Macias Cedeño Lenin Xavier</h1>
-    <p>Haga click en iniciar formulario</p>
+    <nav class="botones">
+      <button onclick="location.href='juegos.html'">Juegos de PC</button>
+      <button onclick="location.href='emuladores.html'">Emuladores y ROMs</button>
+      <button onclick="location.href='info.html'">Información del estudiante</button>
+    </nav>
   </div>
 
-  <!-- 💻 Script para el control de música -->
+  <!-- 🔥 Redes sociales pequeñas fuera del rectángulo -->
+  <div class="redes-sociales">
+
+    <!-- TIKTOK (ahora usando tu archivo local) -->
+    <button class="btn-red" onclick="window.open('https://www.tiktok.com/@TU_USUARIO', '_blank')">
+      <img 
+        src="imagenes/tik_tok.jpg"
+        alt="TikTok"
+        class="logo-red">
+      TikTok
+    </button>
+
+    <!-- INSTAGRAM (con icono online) -->
+    <button class="btn-red" onclick="window.open('https://www.instagram.com/TU_USUARIO', '_blank')">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/512px-Instagram_logo_2016.svg.png"
+        class="logo-red" 
+        alt="Instagram">
+      Instagram
+    </button>
+
+  </div>
+
   <script>
     const musica = document.getElementById('musica');
     const boton = document.getElementById('boton-musica');
@@ -47,9 +66,10 @@
       }
     });
   </script>
-</body>
 
+</body>
 </html>
+
 
 
 
